@@ -7,4 +7,23 @@ class SylixosUpload < Formula
   def install
     bin.install "sylixos-upload-macos" => "sylixos-upload"
   end
+  def caveats
+      def caveats
+    <<~EOS
+    SwiftRewriter --help
+    SwiftRewriter files --colorize --target stdout MyClass.h MyClass.m
+    SwiftRewriter path /path/to/project/
+    EOS
+  end
+    <<~EOS
+        SylixOS 一键工具：
+        sylixos-upload --help/-h/--h
+        sylixos-upload <.reproject xml file full path>
+        sylixos-upload <.reproject xml file full path> [ftp usr] [ftp password] [ftp port]
+        ftp usr default:root
+        ftp password default:root
+        ftp port default:21
+        author: wupengcheng
+    EOS
+  end
 end
