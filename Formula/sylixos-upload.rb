@@ -1,4 +1,4 @@
-class sylixos-upload < Formula
+class SylixosUpload < Formula
   desc "SylixOS Project Upload 工具"
   homepage "https://github.com/SeanPcWoo/sylixos-upload"
   url "https://github.com/SeanPcWoo/sylixos-upload/releases/download/v1.0.0/sylixos-upload-macos-v1.0.0.tar.gz"
