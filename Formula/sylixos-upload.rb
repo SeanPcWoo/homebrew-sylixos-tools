@@ -8,13 +8,6 @@ class SylixosUpload < Formula
     bin.install "sylixos-upload-macos" => "sylixos-upload"
   end
   def caveats
-      def caveats
-    <<~EOS
-    SwiftRewriter --help
-    SwiftRewriter files --colorize --target stdout MyClass.h MyClass.m
-    SwiftRewriter path /path/to/project/
-    EOS
-  end
     <<~EOS
         SylixOS 一键工具：
         sylixos-upload --help/-h/--h
