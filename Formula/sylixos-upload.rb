@@ -5,6 +5,6 @@ class sylixos-upload < Formula
   sha256 "6b1c571418c0674429c66635c27fcc4cc0d76a49c4f77adf12a10fa4fa2abacc"
   version "1.0.0"
   def install
-    bin.install "sylixos-upload"
+    bin.install "sylixos-upload-macos" => "sylixos-upload"
   end
 end
